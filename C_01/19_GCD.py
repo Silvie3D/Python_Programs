@@ -1,7 +1,9 @@
-a=int(input("Enter first value"))
-b=int(input("Enter second value"))
+a=int(input("Enter first value: "))
+b=int(input("Enter second value: "))
+
 while b!=0:
     temp=a
-    b=a%b
-    a=temp
-print("The GCD is: ",a)
+    a=b
+    b=temp % b
+
+print("The GCD is:", a)
